@@ -11,7 +11,8 @@ class Tab1Screen extends React.Component {
     if (isNaN(this.state.a) || isNaN(this.state.b)) {
 
     } else {
-      this.props.navigation.push("SecondScreen", {
+      console.log(this.props.screenProps);
+      this.props.screenProps.rootNavigation.push("SecondScreen", {
         sum : Number(this.state.a) + Number(this.state.b)
       })
     }

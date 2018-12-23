@@ -7,18 +7,22 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
 
 import MainScreen from "./MainScreen";
 
-import {View, Text} from "react-native";
 import {createStackNavigator, createAppContainer} from "react-navigation";
 import SecondScreen from "./SecondScreen";
 
-class App extends React.Component {
+export default class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+  }
   render() {
     return (
-      <MainView />
+      <MainView/>
     );
   }
 }
@@ -34,4 +38,4 @@ const AppNavigator = createStackNavigator(
   )
 ;
 
-const MainView =  createAppContainer(AppNavigator);
+const MainView = createAppContainer(AppNavigator);
