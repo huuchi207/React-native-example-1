@@ -62,6 +62,7 @@ class Tab1Screen extends React.Component {
       </View>
     );
   }
+
 }
 const styles =  StyleSheet.create({
   rootView: {

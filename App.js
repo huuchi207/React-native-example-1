@@ -8,10 +8,11 @@
 
 import React, {Component} from 'react';
 
-import MainScreen from "./MainScreen";
+import MainScreen from "./screen/MainScreen";
 
 import {createStackNavigator, createAppContainer} from "react-navigation";
-import SecondScreen from "./SecondScreen";
+import SecondScreen from "./screen/SecondScreen";
+import EnterNewRowScreen from "./screen/EnterNewRowScreen";
 
 export default class App extends React.Component{
   constructor(props){
@@ -30,7 +31,8 @@ export default class App extends React.Component{
 const AppNavigator = createStackNavigator(
   {
     MainScreen: MainScreen,
-    SecondScreen: SecondScreen
+    SecondScreen: SecondScreen,
+      EnterNewRowScreen: EnterNewRowScreen
   },
   {
     initialRouteName: "MainScreen"
